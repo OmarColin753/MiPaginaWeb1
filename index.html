@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Página Personal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   
+    <!-- Encabezado con imagen de fondo y superposición de foto y nombre -->
+    <header class="encabezado">
+        <div class="encabezado-fondo">
+            <div class="perfil-superpuesto">
+                <img src="img/Foto.jpg" alt="Foto de Omar Colindres" class="foto-perfil">
+                <h1>Santos Omar Alvarez Colindres</h1>
+            </div>
+        </div>
+    </header>
+
+    <main class="contenedor">
+
+        <section class="tarjeta">
+            <h2>Intereses</h2>
+            <ul class="lista-grid">
+                <li>Tecnología</li>
+                <li>Codificación</li>
+                <li>Dibujar</li>
+                <li>Creacion de Contenido</li>
+                <li>Videojuegos</li>
+                <li>Leer</li>
+                <li>Psicologia</li>
+                <li>Reposteria</li>
+            </ul>
+        </section>
+
+        <section class="tarjeta">
+            <h2>Habilidades</h2>
+            <ul class="lista-grid">
+                <li>Creativo</li>
+                <li>Edicion de Videos</li>
+                <li>Eficiente</li>
+                <li>Sociable</li>
+                <li>Empatico</li>
+                <li>Adaptabilidad</li>
+                <li>Tolerante</li>
+                <li>Trabajo en Equipo</li>
+            </ul>
+        </section>
+
+        <section class="tarjeta">
+            <h2>Mi contenido favorito en YouTube</h2>
+            <div class="video-responsivo">
+                <iframe src="https://www.youtube.com/embed/k4xGqY5IDBE" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <!-- Sección de contacto -->
+        <section id="contacto" class="tarjeta">
+            <h2>Contacto</h2>
+            <form>
+                <input type="text" placeholder="Tu nombre" required>
+                <input type="email" placeholder="Tu correo" required>
+                <textarea rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        &copy; 2025 Santos Omar Álvarez Colindres. Todos los derechos reservados.
+    </footer>
+
+</body>
+</html>

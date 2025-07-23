@@ -1,0 +1,188 @@
+/* Estilo base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #c67528; /* Beige otoñal */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Segoe UI', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Contenedor general */
+.contenedor {
+    width: 100%;
+    max-width: 900px;
+    padding: 20px;
+}
+
+/* Encabezado con imagen de fondo */
+.encabezado {
+    position: relative;
+    width: 100vw;
+    max-width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    padding: 60px 20px 80px;
+    text-align: center;
+    background-image: url('img/Bosque2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+/* Perfil */
+.perfil-superpuesto {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.foto-perfil {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid white;
+    object-fit: cover;
+    margin-bottom: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.perfil-superpuesto h1 {
+    font-size: 1.8em;
+    margin: 0;
+    text-shadow: 0 0 8px rgba(0,0,0,0.7);
+}
+
+/* Tarjetas */
+.tarjeta {
+    background-color: #fff3e0;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 10px rgba(139, 69, 19, 0.1); /* Sombra marrón suave */
+}
+
+/* Títulos */
+.tarjeta h2 {
+    color: #a84300; /* Naranja otoñal */
+    margin-bottom: 15px;
+    border-bottom: 1px solid #d69f60;
+    padding-bottom: 5px;
+}
+
+/* Lista tipo grid */
+.lista-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 10px;
+    list-style: none;
+}
+
+.lista-grid li {
+    background-color: #f8d9a0;
+    color: #4e2e00;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* FORMULARIO DE CONTACTO CORREGIDO */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+form label {
+    font-weight: bold;
+    color: #4e2e00;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d6a673;
+    border-radius: 8px;
+    background-color: #fffaf5;
+    font-size: 16px;
+    resize: vertical;
+}
+
+form textarea {
+    min-height: 120px;
+}
+
+form input[type="submit"] {
+    background-color: #a84300;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #7b3000;
+}
+
+/* Video YouTube responsivo */
+.video-responsivo {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.video-responsivo iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Footer */
+footer {
+    background-color: #4e2e00;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .lista-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .foto-perfil {
+        width: 100px;
+        height: 100px;
+    }
+
+    .tarjeta {
+        padding: 15px;
+    }
+}
